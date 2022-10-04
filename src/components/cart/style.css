@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+
+
+.containercart{
+
+	max-width: 1200px;
+
+	margin: 0 auto;
+
+}
+
+.containercart > h1{
+
+	padding: 20px 0;
+
+}
+
+.cart{
+
+	display: flex;
+
+}
+
+.productscart{
+
+	flex: 0.75;
+
+}
+
+.productcart{
+
+	display: flex;
+
+	width: 100%;
+
+	height: 200px;
+
+	overflow: hidden;
+
+	border: 1px solid silver;
+
+	margin-bottom: 20px;
+
+  font-size: 20px;
+
+
+}
+
+.productcart:hover{
+
+	border: none;
+
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+
+	transform: scale(1.03);
+
+}
+
+.productcart > img{
+
+	width: 250px;
+
+	height: 160px;
+
+	object-fit: cover;
+
+}
+
+.productcart > img:hover{
+
+	transform: scale(1.08);
+
+}
+
+.productcart-info{
+
+	padding: 20px;
+
+	width: 100%;
+
+	position: relative;
+
+}
+
+.productcart-name, .productcart-price, .productcart-offer{
+
+	margin-bottom: 20px;
+
+}
+
+.productcart-remove{
+
+	position: absolute;
+
+	bottom: 20px;
+
+	right: 20px;
+
+	padding: 10px 25px;
+
+	background-color: #f00a0a;
+
+	color: white;
+
+	cursor: pointer;
+
+	border-radius: 5px;
+
+  font-size: 15px;
+
+
+}
+
+.productcart-remove:hover{
+
+	background-color: #f00a0a;
+
+	color: #ffffff;
+
+	font-weight: 700;
+
+	border: 1px solid #27ae60;
+
+}
+
+.productcart-quantity > input{
+
+	width: 40px;
+
+	padding: 5px;
+
+	text-align: center;
+
+}
+
+.fa{
+
+	margin-right: 5px;
+
+}
+
+.cart-total{
+
+	flex: 0.25;
+
+	margin-left: 20px;
+
+	padding: 20px;
+
+	height: 320px;
+
+	border: 1px solid silver;
+
+	border-radius: 5px;
+
+}
+
+.cart-total p{
+
+	display: flex;
+
+	justify-content: space-between;
+
+	margin-bottom: 30px;
+
+	font-size: 18px;
+
+}
+
+.cart-total a{
+
+	display: block;
+
+	text-align: center;
+
+	height: 40px;
+
+	line-height: 40px;
+
+	background-color: #27ae60;
+
+	color: white;
+
+	text-decoration: none;
+
+  font-size: 15px;
+
+
+}
+
+.cart-total a:hover{
+
+	background-color: #27ae60;
+  font-weight: 700;
+
+}
+
+@media screen and (max-width: 700px){
+
+	.remove{
+
+		display: none;
+
+	}
+
+	.productcart{
+
+		height: 150px;
+
+	}
+
+	.productcart > img{
+
+		height: 250px;
+
+		width: 200px;
+
+	}
+
+	.productcart-name, .productcart-price, .productcart-offer{
+
+		margin-bottom: 10px;
+
+	}
+
+}
+
+@media screen and (max-width: 900px){
+
+	.cart{
+
+		flex-direction: column;
+
+	}
+
+	.cart-total{
+
+		margin-left: 0;
+
+		margin-bottom: 20px;
+
+	}
+
+}
+
+@media screen and (max-width: 1220px){
+
+	.container{
+
+		max-width: 95%;
+
+	}
+
+}
